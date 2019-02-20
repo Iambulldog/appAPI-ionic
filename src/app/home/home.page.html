@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title >
+      con sql
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <form (ngSubmit)="logForm()">
+        <ion-item>
+          <ion-label>Todo</ion-label>
+          <ion-input type="text" [(ngModel)]="datos.name" name="title"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Description</ion-label>
+          <ion-textarea [(ngModel)]="datos.description" name="description"></ion-textarea>
+        </ion-item>
+        <button ion-button type="submit" block>Add Todo</button>
+      </form>
+      
+
+</ion-content>
